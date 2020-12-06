@@ -1,0 +1,44 @@
+<! DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/detail_style.css' %}">
+    </head>
+
+    <body>
+        {% block content %}
+
+        <div class="title">
+            {{project.title}}
+        </div>
+        
+        <div class = "container">
+            <div>
+                <img src="{{ project.detail_pic.url }}" >
+            </div>
+                <p> {{project.body}} </p>
+           
+
+        </div>
+        
+    
+        <div class="logos">
+            <a href="{{ project.git_link }}">               
+                <img src="{% static 'GitHub-logo.png' %}" class="main" >
+             </a>
+             <!--jeśli jest link do strony to wyświetl ikonę "web" -->
+             {% if project.web_link != null %}
+             <a href="{{ project.git_link }}">               
+                <img src="{% static 'GitHub-logo.png' %}" class="main" >
+             </a>
+             {% endif %}
+            
+
+        </div>
+
+        {% endblock %}
+    </body>
+
+</html>

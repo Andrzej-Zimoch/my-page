@@ -1,0 +1,146 @@
+.master {
+text-align: center;
+color:blue;
+
+}
+
+
+
+.container{
+  position: relative;
+  text-align: center;
+  min-height: 800px; 
+  width: 100%;
+  background-image: url("/static/mountains.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  
+}
+
+
+.jeden{
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+  	
+}
+.name{
+  font-size: 70px;
+  color:darkslategrey;
+  
+  
+}
+
+.dwa{
+  
+  background-color: white;
+  color:darkslategrey;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:  50px;
+  padding-bottom: 35px;
+  height: 250px;
+  font-family: 'Montserrat', sans-serif;
+  
+  
+}
+.dwa p{
+  font-size: 35px;
+  font-style: bold;
+}
+.trzy{
+  background-color: #537D8D;
+  font-size: 20px;
+  color:lightgoldenrodyellow;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 5px;
+  padding-bottom: 7px;
+}
+
+.trzy p{
+  font-size: 35px;
+  font-style: bold;
+}
+.trzy.content{
+  /* display: flex; */
+  /* justify-content: space-between; */
+  
+  text-align: center;
+  
+}
+
+.image{
+  margin: 5px;
+  
+  text-align: center;
+  opacity: 1;
+  transition: .6s ease;
+  display: inline;
+  padding:5px;
+  position: relative;
+  text-align: center;
+  
+}
+
+.image:hover{
+  opacity: 0.5;
+}
+
+
+
+
+.cztery{
+  background-color: white;
+  font-size: 20px;
+  color:darkslategrey;
+  font-family: 'Montserrat', sans-serif;
+  height: 250px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:10px;
+}
+
+.cztery p{
+  font-size: 35px;
+  font-style: bold;
+}
+
+a{
+ 
+  text-decoration-color: none;
+  
+}
+
+.img_txt{
+
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}

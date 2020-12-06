@@ -1,0 +1,93 @@
+<! DOCTYPE html>
+{% load static %}
+
+<html>
+    
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{% static 'css/base_style.css' %}">
+
+</head>
+<body data-media-url="{% get_media_prefix %}">
+    
+            
+       
+    <div class="master">           
+
+        <div class="container">
+            
+            
+            <div class='paralax'></div>
+            <div class="jeden">
+                <div class="name"> ANDRZEJ ZIMOCH</div>
+                <br>
+                WEB DEVELOPER
+            
+            </div>
+        
+        </div>
+
+        <div class="dwa">
+            <p>ABOUT ME</p>
+            <br>
+            I'm self taught developer with mechanical engineering degree. <br>
+            After 3 years in Samsung's R&D i wanted to push my carieer and skills futher.<br>
+            I'm familiar with front and back web, as well as SQL languages, though most of my stuff is written in Python.  
+
+
+        </div>
+
+        <div class="trzy">
+            <p>My Work</p>
+            <div class="content">            
+            
+            {% block content %}
+            {% for i in projects %}          
+            
+            <!-- <a href="{{ i.git_link }}"> -->
+            <a href="{{ i.git_link }}">
+            <!-- <div class="titlepic"> -->
+                <img src="{{ i.pic.url }}" width="270" height="270" class="image">
+                <!-- {{ i.title }} -->
+                <!-- <div class="tytuł">
+                    {{ i.title }}
+                </div> -->
+            <!-- </div> -->
+            
+            
+            
+            </a>
+            
+            
+            {% endfor %}
+            {% endblock %}
+            </div>
+        
+        </div>
+
+        <div class="cztery">
+            <p>Contact</p>
+            Andrzej Zimoch <br>
+            mail: andrzejzimoch4@gmail                  <br>        
+            phone: 571 802 894<br>
+            github:<a href="https://github.com/Andrzej-Zimoch"> https://github.com/Andrzej-Zimoch</a> <br>
+            Poznań Poland
+        </div>
+    </div>
+        
+
+
+
+          
+       
+    
+    
+
+ 
+   
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<! DOCTYPE html>
+{% load static %}
+
+<html>
+    
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base_style.css' %}">
+
+</head>
+<body data-media-url="{% get_media_prefix %}">
+    
+            
+       
+    <div class="master">           
+
+        <div class="container">
+            
+            
+            <div class='paralax'></div>
+            <div class="jeden">
+                <div class="name"> ANDRZEJ ZIMOCH</div>
+                <br>
+                WEB DEVELOPER
+            
+            </div>
+        
+        </div>
+
+        <div class="dwa">
+            <p>ABOUT ME</p>
+            <br>
+            I'm self taught developer with mechanical engineering degree. <br>
+            After 3 years in Samsung's R&D I wanted to push my carieer and skills futher.<br>
+            I'm familiar with both frontend and backend languages, though most of my stuff is written in Python.  
+
+
+        </div>
+
+        <div class="trzy">
+            <p>MY WORK</p>
+            <div class="content">            
+            
+            {% block content %}
+            <!-- <div class="img_con"> -->
+            {% for i in projects %}
+                   
+            
+            <a href="mypage/{{ i.slug }}">
+               <img src="{{ i.pic.url }}" width="270" height="270" class="image">
+               
+            </a>
+            
+            
+            {% endfor %}
+            <!-- </div>  
+            -->
+            {% endblock %}
+            </div>
+        
+        </div>
+
+        <div class="cztery">
+            <p>CONTACT</p>
+            Andrzej Zimoch <br>
+            mail: andrzejzimoch4@gmail                  <br>        
+            phone: 571 802 894<br>
+            github:<a href="https://github.com/Andrzej-Zimoch"> https://github.com/Andrzej-Zimoch</a> <br>
+            Poznań Poland
+        </div>
+    </div>
+        
+
+
+
+          
+       
+    
+    
+
+ 
+   
+
+</body>
+
+</html>
